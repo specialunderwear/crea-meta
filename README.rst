@@ -58,7 +58,25 @@ contents of demo/json.py
         print e
     
     raw_input("Press Enter to continue...")
-    
+
+crea-meta command output::
+
+    # prove that it is stored encrypted
+    <built-in function openssl_sha1>
+
+    # prove that all passwords are properly hashed
+    <sha1 HASH object @ 0x10f8466c0>
+
+    # prove that attackers can not read the information out of the passwords
+    '_hashlib.HASH' object has no attribute 'henk'
+
+*Press Enter to continue...*
+
+
+Rest of the file ...
+
+.. code:: python
+
     # create a password class to read the pawwords
     class passwords(object):
         __metaclass__ = JSONMetaNonsence
@@ -79,33 +97,6 @@ contents of demo/json.py
     print b.piet
     print b.kees
     print b.marietje
-
-crea-meta command output::
-
-    # prove that it is stored encrypted
-    <built-in function openssl_sha1>
-
-    # prove that all passwords are properly hashed
-    <sha1 HASH object @ 0x10f8466c0>
-
-    # prove that attackers can not read the information out of the passwords
-    '_hashlib.HASH' object has no attribute 'henk'
-
-*Press Enter to continue...*
-
-
-Source of passwords
-
-.. code:: python
-
-    class passwords(object):
-        __metaclass__ = JSONMetaNonsence
-    
-        henk = 'uy98jjd'
-        piet = 'y98adkkjhd77'
-        kees = 'god'
-        marietje = 'password1'
-        write = True
 
 crea-meta command output::
 
