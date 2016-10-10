@@ -1,5 +1,11 @@
 ::
 
+    [master ] $ python setup.py develop
+    running develop
+    running egg_info
+
+::
+
     [master ⚡] $ crea-meta 
     usage: crea-meta [-h] {json,watching}
     crea-meta: error: too few arguments
