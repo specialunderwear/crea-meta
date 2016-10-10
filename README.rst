@@ -3,10 +3,16 @@
     [master ⚡] $ crea-meta 
     usage: crea-meta [-h] {json,watching}
     crea-meta: error: too few arguments
+
+::
+
     (creameta)ebone@mandarijnen-2:~/Projects/crea-meta (.001 MB)  ma okt 10 21:01:08
     [master ⚡] $ crea-meta henk
     usage: crea-meta [-h] {json,watching}
     crea-meta: error: argument demo: invalid choice: 'henk' (choose from 'json', 'watching')
+
+::
+
     (creameta)ebone@mandarijnen-2:~/Projects/crea-meta (.001 MB)  ma okt 10 21:01:14
     [master ⚡] $ crea-meta json
 
