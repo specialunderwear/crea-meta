@@ -80,7 +80,7 @@ contents of demo/json.py
     print b.kees
     print b.marietje
 
-::
+crea-meta command output::
 
     # prove that it is stored encrypted
     <built-in function openssl_sha1>
@@ -107,7 +107,7 @@ Source of passwords
         marietje = 'password1'
         write = True
 
-::
+crea-meta command output::
 
     # show that this class is of the original type used to store the passwords
     <class 'creameta.demo.json.passwords'>
