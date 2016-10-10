@@ -1,6 +1,6 @@
 ::
 
-    [master ] $ python setup.py develop
+    [master ⚡] $ python setup.py develop
     running develop
     running egg_info
 
