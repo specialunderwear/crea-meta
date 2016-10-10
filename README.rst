@@ -24,6 +24,8 @@
 
 contents of demo/json.py::
 
+.. code-block:: python
+
     >>> from creameta.meta import JSONMetaNonsence
     >>> 
     >>> # create password class that hold passwords
