@@ -100,7 +100,7 @@ Rest of the file ...
 
 crea-meta command output::
 
-    # show that this class is of the original type used to store the passwords
+    # show that this class is of the original type used to store the passwords object
     <class 'creameta.demo.json.passwords'>
     
     # HUH??
