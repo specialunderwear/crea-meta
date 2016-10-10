@@ -94,16 +94,18 @@ contents of demo/json.py
 *Press Enter to continue...*
 
 
-Source of passwords::
+Source of passwords
 
-    >>> class passwords(object):
-    >>>     __metaclass__ = JSONMetaNonsence
-    >>> 
-    >>>     henk = 'uy98jjd'
-    >>>     piet = 'y98adkkjhd77'
-    >>>     kees = 'god'
-    >>>     marietje = 'password1'
-    >>>     write = True
+.. code:: python
+
+    class passwords(object):
+        __metaclass__ = JSONMetaNonsence
+    
+        henk = 'uy98jjd'
+        piet = 'y98adkkjhd77'
+        kees = 'god'
+        marietje = 'password1'
+        write = True
 
 ::
 
@@ -125,18 +127,20 @@ Source of passwords::
     (creameta)ebone@mandarijnen-2:~/Projects/crea-meta (.001 MB)  ma okt 10 21:01:28
     [master ⚡] $ crea-meta watching
 
-checking source of PythonClass::
+checking source of PythonClass
 
-    >>> class PythonClass(object):
-    >>>     __metaclass__ = ImWatchingYou
-    >>> 
-    >>>     def __init__(self, **kwargs):
-    >>>         self.__dict__.update(kwargs)
-    >>> 
-    >>>     def contains(self):
-    >>>         for a in self:
-    >>>             if a == None:
-    >>>                 return "null"
+.. code:: python
+
+    class PythonClass(object):
+        __metaclass__ = ImWatchingYou
+    
+        def __init__(self, **kwargs):
+            self.__dict__.update(kwargs)
+    
+        def contains(self):
+            for a in self:
+                if a == None:
+                    return "null"
 
 
 *Press Enter to continue...*
@@ -151,26 +155,26 @@ checking source of PythonClass::
 
 *checking source of AbstractEntityContainerAdapterFactory*
 
-::
+.. code:: python
 
-    >>> class AbstractEntityContainerAdapterFactory(object):
-    >>>     __metaclass__ = ImWatchingYou
-    >>> 
-    >>>     def __init__(self, **kwargs):
-    >>>         self.__dict__.update(kwargs)
-    >>> 
-    >>>     def contains(self):
-    >>>         for a in self:
-    >>>             if len(a) != 0:
-    >>>                 for b in a:
-    >>>                     gosub(b)
-    >>>                     for c in b:
-    >>>                         for t in c:
-    >>>                             for v in t:
-    >>>                                 for b in v:
-    >>>                                     for n in b:
-    >>>                                         for x in n:
-    >>>                                             pass
+    class AbstractEntityContainerAdapterFactory(object):
+        __metaclass__ = ImWatchingYou
+    
+        def __init__(self, **kwargs):
+            self.__dict__.update(kwargs)
+    
+        def contains(self):
+            for a in self:
+                if len(a) != 0:
+                    for b in a:
+                        gosub(b)
+                        for c in b:
+                            for t in c:
+                                for v in t:
+                                    for b in v:
+                                        for n in b:
+                                            for x in n:
+                                                pass
 
 
 *Press Enter to continue...*
