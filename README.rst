@@ -22,9 +22,9 @@
     (creameta)ebone@mandarijnen-2:~/Projects/crea-meta (.001 MB)  ma okt 10 21:01:14
     [master ⚡] $ crea-meta json
 
-contents of demo/json.py::
+contents of demo/json.py
 
-.. code-block:: python
+.. code:: python
 
     from creameta.meta import JSONMetaNonsence
     
