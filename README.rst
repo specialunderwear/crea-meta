@@ -61,13 +61,24 @@ contents of demo/json.py
 
 crea-meta command output::
 
-    # prove that it is stored encrypted
+    >>> # prove that it is stored encrypted
+    >>> print passwords
     <built-in function openssl_sha1>
 
-    # prove that all passwords are properly hashed
+    >>> # prove that all passwords are properly hashed
+    >>> print a
     <sha1 HASH object @ 0x10f8466c0>
 
-    # prove that attackers can not read the information out of the passwords
+    >>> # prove that attackers can not read the information out of the passwords
+    >>> try:
+    ...     # prove that attackers can not read the information out of the passwords
+    ...     # object
+    ...     print a.henk
+    ...     print a.piet
+    ...     print a.kees
+    ...     print a.marietje
+    >>> except Exception as e:
+    >>>     print e
     '_hashlib.HASH' object has no attribute 'henk'
 
 *Press Enter to continue...*
@@ -100,17 +111,32 @@ Rest of the file ...
 
 crea-meta command output::
 
-    # show that this class is of the original type used to store the passwords object
+    >>> # show that this class is of the original type used to store the passwords object
+    >>> print passwords
     <class 'creameta.demo.json.passwords'>
     
     # HUH??
+    >>> b = passwords()
+    >>>
+    >>> print b
     passwords storage opened
     # WTF!
-    ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__metaclass__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', u'henk', u'kees', u'marietje', u'piet']
+    >>> print dir(b)
+    [
+        '__class__', '__delattr__', '__dict__', '__doc__', '__format__',
+        '__getattribute__', '__hash__', '__init__', '__metaclass__', '__module__',
+        '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__',
+        '__sizeof__', '__str__', '__subclasshook__', '__weakref__', u'henk',
+        u'kees', u'marietje', u'piet'
+    ]
     # HELP HELP WIZZARDZ!!
+    >>>print b.henk
     uy98jjd
+    >>> print b.piet
     y98adkkjhd77
+    >>> print b.kees
     god
+    >>> print b.marietje
     password1
 
 ::
